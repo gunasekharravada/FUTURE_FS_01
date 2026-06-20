@@ -1,0 +1,100 @@
+#resume 
+{
+  background: var(--bg2);
+}
+
+.resume-wrap 
+{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline 
+{
+  position: relative;
+}
+
+.timeline::before 
+{
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), rgba(59,130,246,0));
+}
+
+.tl-item 
+{
+  padding-left: 60px;
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+
+.tl-dot 
+{
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #8B5CF6);
+  border: 3px solid var(--bg2);
+  z-index: 1;
+}
+
+.tl-card 
+{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.tl-card:hover 
+{
+  border-color: var(--accent);
+}
+
+.tl-year 
+{
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.35rem;
+}
+
+.tl-title 
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.tl-org 
+{
+  font-size: 0.875rem;
+  color: var(--accent-h);
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.tl-desc 
+{
+  font-size: 0.875rem;
+  color: var(--text2);
+  line-height: 1.7;
+}
+
+.resume-cta 
+{
+  text-align: center;
+  margin-top: 2.5rem;
+}

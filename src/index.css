@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after 
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+body 
+{
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s, color 0.3s;
+  background: var(--bg);
+  color: var(--text);
+}
+:root{
+  --nav-link-color:#0f172a;
+}
+[data-them='dark']{
+  --nav-link-color:#EDF2FF;
+}
+
+
+
+
+
+.dark 
+{
+  --bg: #0F172A;
+  --bg2: #1E293B;
+  --bg3: #0D1526;
+  --accent: #3B82F6;
+  --accent-h: #60A5FA;
+  --text: #F8FAFC;
+  --text2: #94A3B8;
+  --border: rgba(148,163,184,0.12);
+  --card: rgba(30,41,59,0.8);
+  --glass: rgba(15,23,42,0.6);
+  --nav-link-color:#EDF2FF;
+}
+
+.light 
+{
+  --bg: #FFFFFF;
+  --bg2: #F8FAFC;
+  --bg3: #F1F5F9;
+  --accent: #2563EB;
+  --accent-h: #3B82F6;
+  --text: #0F172A;
+  --text2: #475569;
+  --border: rgba(15,23,42,0.1);
+  --card: rgba(248,250,252,0.9);
+  --glass: rgba(255,255,255,0.7);
+}
+
+section 
+{
+  padding: 6rem 5%;
+}
+
+.section-title 
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #EDF2FF;
+}
+
+.section-title span 
+{
+  background: linear-gradient(135deg, var(--accent), var(--accent-h));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle 
+{
+  text-align: center;
+  color: var(--text2);
+  font-size: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.section-line 
+{
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-h));
+  border-radius: 2px;
+  margin: 0.75rem auto 0.5rem;
+}
+
+.reveal 
+{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+}
+
+.reveal.visible 
+{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left 
+{
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+}
+
+.reveal-left.visible 
+{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right 
+{
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+}
+
+.reveal-right.visible 
+{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 767px) 
+{
+  section 
+  {
+    padding: 4rem 5%;
+  }
+}

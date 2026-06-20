@@ -1,0 +1,176 @@
+#about 
+{
+  background: var(--bg);
+}
+
+.about-grid 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image-wrap 
+{
+  position: relative;
+}
+
+.about-card 
+{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.about-avatar 
+{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #8B5CF6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.about-av-text 
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.about-name 
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.25rem;
+  color: #EDF2FF;
+}
+
+.about-role 
+{
+  text-align: center;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.about-meta 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.meta-item 
+{
+  background: var(--bg2);
+  border-radius: 10px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.meta-label 
+{
+  font-size: 0.75rem;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meta-val 
+{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 3px;
+}
+
+.about-text h2 
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-text p 
+{
+  color: var(--text2);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.about-stats 
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  
+  .stat-label {
+    white-space: pre-line;
+  }
+}
+
+.stat-card 
+{
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.stat-card:hover 
+{
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.stat-icon 
+{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-num 
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.stat-label 
+{
+  font-size: 0.8rem;
+  color: var(--text2);
+  margin-top: 2px;
+}
+
+@media (max-width: 1023px) 
+{
+  .about-grid 
+  {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) 
+{
+  .about-stats 
+  {
+    grid-template-columns: 1fr 1fr;
+  }
+}

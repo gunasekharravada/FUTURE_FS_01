@@ -1,0 +1,177 @@
+.navbar 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 5%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s;
+}
+
+.nav-logo 
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent-h));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+.nav-links 
+{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link 
+{
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.nav-link:hover, .nav-link.active 
+{
+  color: var(--accent);
+}
+
+.nav-actions 
+{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-btn 
+{
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 8px;
+  cursor: pointer;
+  color: var(--text2);
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.theme-btn:hover 
+{
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.hamburger 
+{
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.mobile-menu 
+{
+  position: fixed;
+  top: 68px;
+  left: 0;
+  right: 0;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 5%;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 999;
+  display: none;
+}
+
+.mobile-menu.open 
+{
+  display: flex;
+}
+
+.mobile-link 
+{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text2);
+  text-decoration: none;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.mobile-link:last-child 
+{
+  border-bottom: none;
+}
+
+.mobile-link:hover 
+{
+  color: var(--accent);
+}
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 600; /* Increased for better legibility */
+  color: var(--nav-link-color);
+  text-decoration: none;
+  transition: color 0.25s ease;
+  cursor: pointer;
+}
+.nav-contact-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: var(--accent);
+  color: #FFFFFF !important; /* Forces text white across both modes for optimal contrast */
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.nav-contact-btn:hover {
+  background-color: var(--accent-h);
+  transform: translateY(-1px); /* Slight interactive pop up */
+}
+
+.nav-contact-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) 
+{
+  .nav-links 
+  {
+    display: none;
+  }
+  
+  .hamburger 
+  {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-contact-btn {
+    display: none; /* Hides the desktop button since mobile menu handles it */
+  }
+}
