@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1. What Your Project Is
 This project is a high-performance, single-page, multi-section developer portfolio website designed to clearly exhibit your technical profile, technical skill proficiency ratings, milestone career trajectories, and comprehensive code project folders.
 
@@ -34,3 +35,6 @@ git clone https://github.com/your-username/developer-portfolio.gitcd developer-p
 # If using standard development servers
     npm install
     npm run dev
+=======
+# FUTURE_FS_01
+>>>>>>> 114299b0889b13ec1d442b9b66a5ef48b4a23c32
