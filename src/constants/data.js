@@ -8,13 +8,54 @@ export const SKILLS_DATA = [
   { cat: "Creative", icon: "📸", items: [{ n: "Video-Editing", p: 70 }, { n: "Photo-Editing", p: 82 }, { n: "Adobe-Photoshop", p: 58 },{ n: "Thumbnail-Designing", p: 58 }] },
 ];
 
-export const PROJECTS_DATA = [
-  { cls: "proj-ecom", emoji: "🛒", title: "E-Commerce (GoCart)", desc: "Modern full-stack e-commerce platform with authentication, cart system, categories, wishlist, and responsive UI.", techs: ["React", "Firebase", "CSS"] },
-  { cls: "proj-ai", emoji: "🍗", title: "KFC", desc: "Modern full-stack e-commerce platform with authentication,categories,and responsive UI", techs: ["React", "Firebase", "Css"] },
-  { cls: "proj-data", emoji: "📊", title: "Vidhyalaya", desc: "A dynamic school website for communication between teacher student and parent, feature like studymaterials, quizes, eventclandar,admissions.", techs: ["React", "Firebase", "Css","Javascript"] },
-  { cls: "proj-port", emoji: "💼", title: "Portfolio Website", desc: "Personal portfolio built with React and modern UI principles, showcasing projects and technical skills.", techs: ["React", "CSS", "JavaScript"] },
-];
 
+
+export const PROJECTS_DATA = [
+  {
+    title: "E-Commerce GoCart",
+    desc: "Modern full-stack e-commerce platform with authentication, cart system, categories, wishlist, and responsive UI.",
+    techs: ["React", "Firebase", "JavaScript"],
+    emoji: "🛒",
+    cls: "project-gocart",
+    liveUrl: "https://gocart-zeta.vercel.app/",
+  },
+
+  {
+    title: "Vidhyalaya",
+    desc: "A dynamic school website for communication between teacher student and parent, feature like studymaterials, quizes, eventclandar,admissions.",
+    techs: ["React", "Firebase", "CSS"],
+    emoji: "🏫",
+    cls: "project-school",
+    liveUrl: "https://school-website-ruddy-seven.vercel.app/",
+  },
+  {
+    title: "KFC",
+    desc: "Modern full-stack e-commerce platform with authentication,categories,and responsive UI",
+    techs: ["React", "Firebase", "CSS"],
+    emoji: "🍗",
+    cls: "project-kfc",
+    liveUrl: "https://kfc-n9q7.vercel.app/",
+  },
+
+   {
+    title: "Portfolio Website",
+    desc: "Personal portfolio built with React and modern UI principles, showcasing projects and technical skills.",
+    techs: ["React", "JavaScript", "CSS"],
+    emoji: "🚀",
+    cls: "project-future",
+    liveUrl: "https://future-fs-01-one-sable.vercel.app/",
+  },
+
+{
+  title: "Share Files with OTP and QR-Code",
+  desc: "A secure file-sharing application that allows users to share files using OTP verification and QR codes.",
+  techs: ["React", "Node.js", "Express.js", "OTP", "QR Code",],
+  emoji: "🔐",
+  cls: "project-share",
+  liveUrl: "YOUR_LIVE_DEMO_URL",
+},
+
+];
 export const TIMELINE_DATA = [
   { year: "2023 – 2025", title: "Diploma Computer Science Engineering", org: "Govt.Polytechnic — Andhra Pradesh, India", desc: "Completed Main focus on software engineering, data structures, algorithms, and core CS fundamentals." },
   { year: "2024 – Summer", title: "Full Stack Python Internship ", org: "Nlite Solutions Private Limited ", desc: "Built responsive applications using Python Djano. Collaborated with a cross-functional Agile team." },
